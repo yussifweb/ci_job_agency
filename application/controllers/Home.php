@@ -26,17 +26,23 @@ class Home extends CI_Controller {
     {
       if ($this->input->post('login')) {
         $name = $this->input->post('name');
-        $pass = md5($this->input->post('pass'));
+        $password = md5($this->input->post('password'));
 
         $user_data = array(
           'name' => $name,
-          'pass' => $pass
+          'password' => $password
         );
-
-        echo "<pre>";
-        var_dump($user_data);
-        echo "</pre>";
-        
+      
+        $users = $this->db->get_where('users', array('name' => $user_data['name']));
+        foreach ($users->result() as $user) {
+          if ($user_data['name'] == $user->name && $user_data['password'] == $user->password) {
+            echo "Success";
+          } else {
+            echo "<script>alert('Incorrect Name or Password')</script>";
+            redirect('home', 'refresh');
+          }
+          
+        }
       }else {
         redirect('home', 'refresh');
       }

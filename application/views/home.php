@@ -14,7 +14,7 @@
                         </div>
                         <div class="form-group">
                             <label for="inputPassword" class="sr-only">Password</label>
-                            <input type="password" id="inputPassword" class="form-control" name="pass" placeholder="Password" required>    
+                            <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required>    
                         </div>
                         <!-- <div class="checkbox mb-3">
                           <label>
