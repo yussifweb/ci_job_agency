@@ -20,6 +20,32 @@ redirect('home', 'refresh');
     
     <?php $this->load->view('dashboard/inc/nav'); ?>
 
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-sm-3">
+                <div class="card">
+                    <div class="card-header">Employees Actions</div>
+                    <div class="list-group">
+                        <a href="" class="list-group-item list-group-item-action">Add Employee</a>
+                        <a href="" class="list-group-item list-group-item-action">Employees List</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">Jobs Actions</div>
+                    <div class="list-group">
+                        <a href="" class="list-group-item list-group-item-action">Add Job</a>
+                        <a href="" class="list-group-item list-group-item-action">Jobs List</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-12 col-sm-9">
+
+            </div>
+        </div>
+    </div>
+
 <main class="container-fluid">
         <div class="main">
           <div class="jumbotron jumbotron-image">
