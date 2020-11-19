@@ -1,5 +1,11 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); 
 
+if (!$_SESSION['name']) {
+redirect('home', 'refresh');
+}
+
+?>
+Welcome <?php echo $_SESSION['name']; ?>
 <main class="container-fluid">
         <div class="main">
           <div class="jumbotron jumbotron-image">

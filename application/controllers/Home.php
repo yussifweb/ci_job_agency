@@ -36,6 +36,7 @@ class Home extends CI_Controller {
         $users = $this->db->get_where('users', array('name' => $user_data['name']));
         foreach ($users->result() as $user) {
           if ($user_data['name'] == $user->name && $user_data['password'] == $user->password) {
+            $_SESSION['name'] = $user_data['name'];
             redirect('dashboard', 'refresh');
           } else {
             echo "<script>alert('Incorrect Name or Password')</script>";
