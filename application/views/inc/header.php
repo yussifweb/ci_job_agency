@@ -9,6 +9,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
 
-    <title>Hello, world!</title>
+    <title>JobCenterGh</title>
   </head>
   <body>

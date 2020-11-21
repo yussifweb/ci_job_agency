@@ -6,9 +6,8 @@
                 <div class="card">
                 <div class="card-header text-center h3">JobCenter</div>
                 <div class="card-body">
-                <h4 class="h5 font-weight-normal text-center">Sign Up</h4>
-                <?php echo form_open('home/register_process'); ?>
-                        <!-- <img class="my-auto" src="./images/bootstrap-solid.svg" alt="" width="72" height="72"> -->
+                <h4 class="h5 font-weight-normal text-center">Sign Up <br/><img class="my-auto" src="<?php echo base_url(); ?>assets/images/bootstrap-solid.svg" alt="" width="72" height="72"></h4>
+                <?php echo form_open('home/register_process'); ?>                        
                         <div class="form-group">
                             <label for="name" id="name-label">Name</label>
                             <input type="text" id="name" class="form-control" name="name" placeholder="Please Enter Your Name" required>
@@ -30,7 +29,7 @@
                             <input type="password" class="form-control"name="password_2" id="password_2" placeholder="Re-enter Password" required>
                         </div>                        
                         <div class="form-group">
-                        <input class="btn btn-sm btn-primary" name="register" type="submit" value="Sign Up" >
+                        <input class="btn btn-sm btn-primary" name="register" type="submit" value="Sign Up" />
                         <a href="<?php echo site_url('home'); ?>" class="btn btn-success btn-sm">Log In</a>
                         </div>
                         <?php echo form_close(); ?>                
